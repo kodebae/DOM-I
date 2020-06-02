@@ -39,7 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 
 //Task 1
@@ -66,7 +66,7 @@ const navLinkTwo = navLinks[1];
 console.log(navLinkTwo);
 
 
-navLinkOne.textContent = siteContent['nav']['nav-item-2'];
+navLinkTwo.textContent = siteContent['nav']['nav-item-2'];
 
 
 //third nav link
@@ -83,17 +83,17 @@ console.log(navLinkFour);
 navLinkFour.textContent = siteContent['nav']['nav-item-4'];
 
 // fifth nav link
-const navLinkFifth = navLinks[4];
-console.log(navLinkFifth);
+const navLinkFive = navLinks[4];
+console.log(navLinkFive);
 
-navLinkOne.textContent = siteContent['nav']['nav-item-5'];
+navLinkFive.textContent = siteContent['nav']['nav-item-5'];
 
 //sixth nav link
 
-const navLinkSixth = navLinks[5];
-console.log(navLinkOne);
+const navLinkSix = navLinks[5];
+console.log(navLinkSix);
 
-navLinkSixth.textContent = siteContent['nav']['nav-item-6'];
+navLinkSix.textContent = siteContent['nav']['nav-item-6'];
 
 // CTA 
 const callAct = document.getElementsByClassName('cta');
@@ -158,8 +158,6 @@ vision.textContent = siteContent['main-content']['vision-h4'];
 
 //contact allH4
 
-const contact = document.querySelectorAll('contact');
+const contact = document.querySelector('.contact');
 console.log(contact);
-
-const contactH4 = contact[0];
-console.log(contactH4);
+contact.textContent = siteContent.contact['.contact'];
