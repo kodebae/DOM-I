@@ -166,4 +166,8 @@ contactP[1].textContent = siteContent['contact']['email'];
 contactP[2].textContent = siteContent['contact']['phone'];
 
 const textContentP = document.querySelectorAll('.text-content p');
-textContent[0].textContent = siteContent['main-content']['features-content'];
+textContentP[0].textContent = siteContent['main-content']['features-content'];
+textContentP[1].textContent = siteContent['main-content']['about-content'];
+textContentP[2].textContent = siteContent['main-content']['services-content'];
+textContentP[3].textContent = siteContent['main-content']['product-content'];
+textContentP[4].textContent = siteContent['main-content']['vision-content'];
