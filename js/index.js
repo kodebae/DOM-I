@@ -176,3 +176,17 @@ const footerP = document.querySelectorAll('footer p');
 footerP[0].textContent = siteContent['footer']['copyright'];
 
 //task 3
+const newOne = document.createElement("a");
+newOne.href = "#";
+newOne.textContent = "Home";
+
+const newTwo = document.createElement("a");
+newTwo.setAttribute("href", "#");
+newTwo.appendChild(document.createTextNode("Help"));
+
+const nav = document.querySelector("nav");
+nav.prepend(newOne);
+nav.appendChild(newTwo);
+
+document.querySelectorAll("nav a").forEach(a => a.style.color = "green");
+// found this code online and made it work for me but not exactly sure how its working
