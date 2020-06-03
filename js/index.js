@@ -158,6 +158,12 @@ vision.textContent = siteContent['main-content']['vision-h4'];
 
 //contact allH4
 
-const contact = document.querySelector('.contact');
-console.log(contact);
-contact.textContent = siteContent.contact['.contact'];
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+const contactP = document.querySelectorAll('.contact p');
+contactP[0].textContent = siteContent['contact']['address'];
+contactP[1].textContent = siteContent['contact']['email'];
+contactP[2].textContent = siteContent['contact']['phone'];
+
+const textContentP = document.querySelectorAll('.text-content p');
+textContent[0].textContent = siteContent['main-content']['features-content'];
