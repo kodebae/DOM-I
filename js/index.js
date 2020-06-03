@@ -171,3 +171,8 @@ textContentP[1].textContent = siteContent['main-content']['about-content'];
 textContentP[2].textContent = siteContent['main-content']['services-content'];
 textContentP[3].textContent = siteContent['main-content']['product-content'];
 textContentP[4].textContent = siteContent['main-content']['vision-content'];
+
+const footerP = document.querySelectorAll('footer p');
+footerP[0].textContent = siteContent['footer']['copyright'];
+
+//task 3
