@@ -189,4 +189,4 @@ nav.prepend(newOne);
 nav.appendChild(newTwo);
 
 document.querySelectorAll("nav a").forEach(a => a.style.color = "green");
-// found this code online and made it work for me but not exactly sure how its working
+// The query Selector grabs all of the elements of a specified type. When we map over them we can then apply styles to some or all elements. 
